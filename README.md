@@ -1,29 +1,30 @@
 <h1 align="center">🔋 Generative DRL EIS Recovery</h1>
 
 <p align="center">
-<em>Generative Deep Reinforcement Learning for Electrochemical Impedance Spectroscopy (EIS) State Recovery</em>
+<em>Generative Deep Reinforcement Learning for Electrochemical Impedance Spectroscopy (EIS) State Recovery – PyTorch Implementation</em>
 </p>
 
 ---
 
 ## 📌 Project Overview
-**Electrochemical Impedance Spectroscopy (EIS)** is widely used in **battery diagnostics**, **fuel cell monitoring**, and **material degradation analysis**.  
-However, EIS measurements are often incomplete or noisy.  
-This project explores **generative deep reinforcement learning (DRL)** approaches to **recover or reconstruct missing EIS states** from partial measurements.
+**Electrochemical Impedance Spectroscopy (EIS)** is an essential diagnostic tool in **battery systems**, **fuel cells**, and **material degradation studies**.  
+This repository demonstrates how **Generative Deep Reinforcement Learning (DRL)** can recover **missing or corrupted EIS states** using a **PyTorch**-based pipeline.
 
 ---
 
 ## 📂 Repository Structure
 
-- **`data/`** – Excel files with EIS state data:  
-  `EIS_state_1.xlsx` – `EIS_state_5.xlsx`  
+- **`data/`** – Raw EIS state datasets (`EIS_state_1.xlsx` – `EIS_state_5.xlsx`)  
   **Columns:**
-  - Frequency *(Hz)*
-  - Real impedance **Z′ (Ω)**
-  - Imaginary impedance **Z″ (Ω)**
+  - `Frequency` *(Hz)*
+  - `Z_real` – Real impedance Z′ *(Ω)*
+  - `Z_imag` – Imaginary impedance Z″ *(Ω)*
   
-- **`notebooks/`** – Jupyter notebooks for analysis and model training:  
-  - `generative_DRL_EIS_Recovery.ipynb`
+- **`notebooks/`** – Jupyter notebooks for:
+  - Data loading & preprocessing
+  - PyTorch DRL model training
+  - EIS state recovery visualization  
+  **Main notebook:** `generative_DRL_EIS_Recovery.ipynb`
 
 ---
 
@@ -31,8 +32,9 @@ This project explores **generative deep reinforcement learning (DRL)** approache
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/generative-DRL-EIS-recovery.git
+git clone https://github.com/YoungwoongYoun/generative-DRL-EIS-recovery.git
 cd generative-DRL-EIS-recovery
 
 # Install dependencies
-pip install numpy pandas tensorflow matplotlib jupyter
+pip install numpy pandas matplotlib jupyter torch
+
