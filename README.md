@@ -1,8 +1,3 @@
-diff --git a//dev/null b/README.md
-index 0000000000000000000000000000000000000000..fcb8f597848f31491f84111393ff3ca5ecb55e02 100644
---- a//dev/null
-+++ b/README.md
-@@ -0,0 +1,19 @@
 +# Generative DRL EIS Recovery
 +
 +This repository contains a Jupyter notebook and accompanying data for exploring generative deep reinforcement learning approaches to electrochemical impedance spectroscopy (EIS) state recovery.
